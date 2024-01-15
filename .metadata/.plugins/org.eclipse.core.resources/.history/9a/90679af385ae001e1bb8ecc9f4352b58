@@ -1,0 +1,19 @@
+package com.myweb.www.repository;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Param;
+
+import com.myweb.www.domain.CommentVO;
+import com.myweb.www.handler.PagingHandler;
+import com.myweb.www.service.PagingVO;
+
+public interface CommentDAO {
+
+	int insert(CommentVO cvo);
+
+	PagingHandler getList(@Param("bno")int bno,@Param("pgvo")PagingVO pgvo);
+
+	int selectOneBnoTotalCount(long bno);
+
+}

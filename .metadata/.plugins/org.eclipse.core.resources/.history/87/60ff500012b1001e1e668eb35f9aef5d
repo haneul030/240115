@@ -1,0 +1,18 @@
+package com.myweb.www.repository;
+
+import com.myweb.www.repository.MemberDAO;
+import com.myweb.www.security.MemberVO;
+
+public interface MemberDAO {
+
+	MemberVO getUser(String email);
+
+	int insert(String pwd);
+
+	void lastLogin(String id);
+
+	int Update(MemberVO mvo);
+
+	void delete(String id);
+
+}

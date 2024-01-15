@@ -1,0 +1,17 @@
+package com.ezen.www.repository;
+
+import com.myweb.www.repository.MemberVO;
+
+public interface MemberDAO {
+
+	MemberVO getUser(String id);
+
+	int insert(MemberVO mvo);
+
+	void lastLogin(String id);
+
+	int Update(MemberVO mvo);
+
+	void delete(String id);
+
+}
